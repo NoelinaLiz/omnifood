@@ -1,0 +1,345 @@
+/* rem and em do NOT depend on html font size in media queries*/
+/* 1 rem = 1 em = 16px*/
+
+/*********************************/
+/*------------ BELOW 1344px ------------*/
+/*********************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+  }
+}
+
+/*********************************/
+/*--------- BELOW 1200px --------*/
+/*********************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .logo-featured-in {
+    height: 2.8rem;
+  }
+}
+
+/*********************************/
+/*--------- BELOW 944px --------*/
+/*********************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .logo-featured-in {
+    height: 2.5rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-plan {
+    padding: 3.2rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  button.btn--form {
+    margin-top: 4.8rem;
+  }
+
+  footer .container-footer {
+    gap: 18rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/*********************************/
+/*--------- BELOW 700px --------*/
+/*********************************/
+@media (max-width: 44em) {
+  footer .container-footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8rem;
+  }
+  .logo-featured-in {
+    height: 2.2rem;
+  }
+  .step-number {
+    font-size: 6.4rem;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .section-how .container,
+  .section-meals .container,
+  .section-pricing .container,
+  .section-featured .container {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+    padding: 5.4rem 3.2rem;
+  }
+}
+
+/*********************************/
+/*--------- BELOW 544px --------*/
+/*********************************/
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .logo-featured-in {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: -1/1;
+  }
+
+  .step-img-box {
+    transform: translateY(3.2rem);
+  }
+
+  .section-how {
+    padding: 4.8rem 0;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 4.8rem 4.4rem 6.4rem 4.4rem;
+  }
+  footer .container-footer {
+    grid-template-columns: 1fr;
+    gap: 7rem;
+    padding: 0 8rem;
+  }
+
+  .nav-col-links {
+    grid-row: 2;
+  }
+
+  .noeliza-logo {
+    width: 50%;
+  }
+
+  .logo-footer {
+    width: 50%;
+  }
+
+  .logo-col--about {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .footer-link {
+    font-size: 2.2rem;
+  }
+
+  .noeliza-text,
+  .noeliza-text-email {
+    font-size: 2.2rem;
+  }
+
+  .footer-nav {
+    text-align: center;
+    gap: 3.4rem;
+  }
+
+  .footer-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .social-profiles {
+    gap: 2rem;
+  }
+
+  .noeliza {
+    gap: 2.4rem;
+  }
+
+  .footer {
+    padding: 9.6rem 0 3.8rem 0;
+  }
+}
